@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/*
+==========================================
+                Reset Css
+==========================================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+h2{
+    font-size: rem;
+}
+
+h5{
+    font-size: rem;
+    font-weight: ;
+}
+p{
+    font-weight: 400;
+    font-size: rem;
+    color:;
+    line-height: rem;
+}
+
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+ol,
+ul{
+    list-style-type: none;
+}
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+}
+/*
+==========================================
+                normalize Css
+==========================================
+*/
+
+body {
+    transition: all .5s;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(233, 47%, 7%);
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color:;
+    --darkblue:;
+    --gray-color:;
+    --medium-dark-color:;
+    --white:#ffffff;
+}
+/*  */
+.text_content h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+.text_content>p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 86%;
+    padding: 10% 0;
+    line-height: 25px;
+    display: inline-block;
+    
+}
+.wrapper{
+    background:hsl(244, 38%, 16%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2.0rem;
+}
+.content-image img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.content-image{
+    position: relative;
+}
+.content-image::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: hsl(277, 64%, 61%);
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+.text_content{
+    padding: 10%;
+}
+.text_content span{
+    color: hsl(277, 64%, 61%);
+}
+.stat_content h5{
+    font-size: 2.2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.stat_content p{
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.stat_box_content{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:425px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .stat_box_content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .stat_content{
+        margin-bottom: 20px;
+    }
+    .text_content h2{
+        font-size: 2.5rem;
+    }
+    .text_content p{
+        width: 89%;
+    }
+    .content-image{
+        order: -1;
+    }
+}
